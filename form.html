@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="manunited.jpg">
+    <form>
+
+        <h1>Silahkan isi data Anda</h1>
+        
+        <input type="hidden" name="halaman" value="1">
+        <table border="1">      
+        <tr>        
+        <td><label for="nama">Nama lengkap:</label></td>       
+        <td><input type="text" name="nama" id="nama" maxlength="40" size="20"></td>       
+        </tr>       
+        
+        <tr>       
+        <td><label for="pass">Password:</label></td>       
+        <td><input type="password" name="pass" id="pass" maxlength="8" size="8"></td>       
+        </tr>       
+       
+        <tr>       
+        <td><label for="jenkel">Jenis kelamin:</label></td>        
+        <td><input type="radio" name="jenkel" id="jenkel" value="L">       
+        Laki-laki<br>
+        <input type="radio" name="jenkel" id="jenkel" value="P">        
+        -Perempuan</td>       
+        </tr>
+        
+        <tr>       
+        <td><label for="alamat">Alamat: </label></td>        
+        <td><textarea rows="3" cols="30"
+        name"alamat" id="alamat"></textarea></td>        
+        </tr>
+        
+        <tr>
+            <td><label for="kota">Kota:</label></td>
+            <td>
+              <select name="kota" id="kota">
+                <option value="">pilih kota...</option>
+                <option value="ygy">Yogyakarta</option>
+                <option value="jkt">Jakarta</option>
+                <option value="sby">Surabaya</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="benar">Data Anda Sudah Benar?</label></td>
+            <td>
+              <input type="checkbox" name="data" id="benar" value="benar"> Sudah<br>
+              <input type="checkbox" name="data" id="belum" value="belum"> Belum
+            </td>
+          </tr>
+        </table>
+        
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    
+    </form>
+</body>
+</html>
